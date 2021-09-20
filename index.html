@@ -5,15 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Assets/stylesheets/mainstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
   <title>the next responsive web page</title>
 </head>
 <body>
-  <header>
+  <header class="main-header">
 <!-- web-version -->
+    <img class="mob-menu" src="Assets/images/icons/menu-mob/menu_black_24dp.svg" alt="menu icon">
     <div class="logo">
 
     </div>
-    <nav class="web-navigation">
+    <nav class="web-navigation mob-hiden">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">News</a></li>
@@ -23,8 +27,11 @@
         <li><a href="#">Partner wiht us</a></li>
       </ul>
     </nav>
-    <div class="message-icon">
-
+    <div class="message-icon mob-hiden">
+      <a href="#"><img src="Assets/images/icons/logos/message-icon.svg" alt="message icon"></a>
+    </div>
+    <div class="spacer mob-hiden">
+      <a href="#">The party is bla bla bla</a>
     </div>
   </header>
 
@@ -38,7 +45,7 @@
 
     <section class="left-highlights">
       <div class="main-left-highlight">
-        <h1>You can now explore the Universe virtually — spanning 13.8 billion years in time></h1>
+        <h1>You can now explore the Universe virtually — spanning 13.8 billion years in time</h1>
       </div>
 
       <div class="sub-left-highlight">
@@ -49,11 +56,11 @@
 
     <section class="right-highlights">
       <div class="sub-right-highlights">
-        <div class="right-sub-1">
+        <div class="right-sub rs-1">
           <h2>Here’s why the fast internet you pay for is sometimes slow as hell</h2>
         </div>
 
-        <div class="right-sub-2">
+        <div class="right-sub rs-2">
           <h2>What the hell is that weird flashing from the center of the galaxy?</h2>
         </div>
       </div>
@@ -66,13 +73,33 @@
 
   <section class="articles">
     <h1>POPULAR ARTICLES TODAY</h1>
-    <ol>
-      <li><a href="#">Oh snap! Who is Microsoft buying now? Valve? 2K? Sega? Sony??</a></li>
-      <li><a href="#">What the hell is that weird flashing from the center of the galaxy?</a></li>
-      <li><a href="#">Physicists think we’ve detected the dark energy ripping our universe apart</a></li>
-      <li><a href="#">Computer vision can help spot cyber threats with startling accuracy</a></li>
-      <li><a href="#">You can now explore the Universe virtually — spanning 13.8 billion years in time </a></li>
-    </ol>
+
+    <section class="sub-articles">
+      <div class="article">
+        <span>1</span>
+        <a href="#">Oh snap! Who is Microsoft buying now? Valve? 2K? Sega? Sony??</a>
+      </div>
+
+      <div class="article">
+        <span>2</span>
+        <a href="#">What the hell is that weird flashing from the center of the galaxy?</a>
+      </div>
+  
+      <div class="article">
+        <span>3</span>
+        <a href="#">Physicists think we’ve detected the dark energy ripping our universe apart</a>
+      </div>
+
+      <div class="article">
+        <span>4</span>
+        <a href="#">Computer vision can help spot cyber threats with startdivng accuracy</a>
+      </div>
+
+      <div class="article">
+        <span>5</span>
+        <a href="#">You can now explore the Universe virtually — spanning 13.8 bildivon years in time </a>
+      </div>
+    </section>
   </section>
 
   <section class="stories">
@@ -190,7 +217,5 @@
       </ul>
     </nav>
   </section>
-
-
 </body>
 </html>
